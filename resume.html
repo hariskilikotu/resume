@@ -59,28 +59,36 @@
     color: #fff;
     margin: 0 0 4.5pt;
   }
+  .side-name {
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: .2pt;
+    color: #fff;
+    margin-bottom: 3.5pt;
+  }
   .side-block { margin-top: 14pt; }
   .side-block.first { margin-top: 13pt; }
+  .side-block.first-p2 { margin-top: 0; }
   .sidebar p, .sidebar li {
     font-size: 8.5pt;
-    line-height: 1.3;
+    line-height: 1.35;
     color: var(--side-text);
   }
   .sidebar p { margin-bottom: 3.6pt; }
   .sidebar a { color: var(--side-text); text-decoration: underline; }
   .sidebar ul { list-style: none; padding-left: 2pt; }
-  .sidebar ul li { position: relative; padding-left: 8pt; margin-bottom: 3.6pt; font-size: 9pt; }
+  .sidebar ul li { position: relative; padding-left: 8pt; margin-bottom: 4.5pt; font-size: 8.8pt; line-height: 1.3; }
   .sidebar ul li::before { content: "•"; position: absolute; left: 0; color: var(--side-text); }
-  .skill { margin-bottom: 5.5pt; }
+  .skill { margin-bottom: 7pt; }
   .skill b {
     display: block;
-    font-size: 8.5pt;
+    font-size: 8.7pt;
     color: #fff;
-    margin-bottom: 1pt;
+    margin-bottom: 1.5pt;
   }
-  .skill span { font-size: 7.6pt; line-height: 1.3; color: var(--side-text); display: block; }
-  .edu b { display: block; font-size: 8.5pt; color: #fff; line-height: 1.25; }
-  .edu span { font-size: 7.6pt; color: var(--side-text); }
+  .skill span { font-size: 8pt; line-height: 1.32; color: var(--side-text); display: block; }
+  .edu b { display: block; font-size: 8.7pt; color: #fff; line-height: 1.25; margin-bottom: 2pt; }
+  .edu span { font-size: 8pt; color: var(--side-text); display: block; }
 
   /* ---------- Main column ---------- */
   .main {
@@ -89,6 +97,7 @@
     width: 327pt;
   }
   .main.cont { top: 44pt; }
+  .main.cont > h2:first-child { margin-top: 0; }
 
   h1 {
     font-size: 21pt;
@@ -190,22 +199,6 @@
       </ul>
     </div>
 
-    <div class="side-block">
-      <h3>Technical Skills</h3>
-      <div class="skill"><b>Agentic AI &amp; LLMs</b><span>CrewAI, LangChain, LangGraph, Mastra, Vector Databases</span></div>
-      <div class="skill"><b>Data Modeling &amp; Architecture</b><span>ERwin, IE, BPMN, UML, MS Visio, Relational Design</span></div>
-      <div class="skill"><b>Databases &amp; Warehousing</b><span>SQL Server, Oracle, MySQL, Snowflake, PL/SQL</span></div>
-      <div class="skill"><b>NoSQL &amp; Big Data</b><span>Hadoop, Cassandra, Neo4j, MongoDB, Redis</span></div>
-      <div class="skill"><b>Programming Languages</b><span>C#, VC++, Java, JavaScript, TypeScript, Python</span></div>
-      <div class="skill"><b>Web &amp; Enterprise Dev</b><span>NodeJS, ASP.NET, WebAPI, HTML, XML, JSON, LEX/YACC</span></div>
-      <div class="skill"><b>Tools &amp; Methodologies</b><span>Git, GitHub, Jira, Agile Scrum/Kanban, Waterfall</span></div>
-    </div>
-
-    <div class="side-block edu">
-      <h3>Education</h3>
-      <b>B.Tech, Mechanical Production Engineering</b>
-      <span>University of Kerala, 2000</span>
-    </div>
   </aside>
 
   <main class="main">
@@ -257,17 +250,43 @@
       </ul>
     </div>
 
-    <div class="job">
-      <h4>Data Modeling Product Manager | Team Leader | Software Engineer</h4>
-    </div>
   </main>
 </div>
 
 <!-- ===================== PAGE 2 ===================== -->
 <div class="page">
+  <aside class="sidebar">
+    <div class="side-block first-p2">
+      <div class="side-name">Haris Kilikotu</div>
+      <p><a href="mailto:hariskilikotu@gmail.com">hariskilikotu@gmail.com</a></p>
+      <p>+91 7799689423</p>
+      <p>Hyderabad, India</p>
+    </div>
+
+    <div class="side-block">
+      <h3>Technical Skills</h3>
+      <div class="skill"><b>Agentic AI &amp; LLMs</b><span>CrewAI, LangChain, LangGraph, Mastra, Vector Databases</span></div>
+      <div class="skill"><b>Data Modeling &amp; Architecture</b><span>ERwin, IE, BPMN, UML, MS Visio, Relational Design</span></div>
+      <div class="skill"><b>Databases &amp; Warehousing</b><span>SQL Server, Oracle, MySQL, Snowflake, PL/SQL</span></div>
+      <div class="skill"><b>NoSQL &amp; Big Data</b><span>Hadoop, Cassandra, Neo4j, MongoDB, Redis</span></div>
+      <div class="skill"><b>Programming Languages</b><span>C#, VC++, Java, JavaScript, TypeScript, Python</span></div>
+      <div class="skill"><b>Web &amp; Enterprise Dev</b><span>NodeJS, ASP.NET, WebAPI, HTML, XML, JSON, LEX/YACC</span></div>
+      <div class="skill"><b>Tools &amp; Methodologies</b><span>Git, GitHub, Jira, Agile Scrum/Kanban, Waterfall</span></div>
+    </div>
+
+    <div class="side-block edu">
+      <h3>Education</h3>
+      <b>B.Tech, Mechanical Production Engineering</b>
+      <span>University of Kerala, 2000</span>
+    </div>
+  </aside>
+
   <main class="main cont">
-    <div class="job" style="margin-top:0">
-      <div class="meta" style="margin-top:0"><span class="co">CA Technologies</span><span class="sep">|</span><span class="date">Dec 2004 – Jul 2015</span></div>
+    <h2>Professional Experience (Cont.)</h2>
+
+    <div class="job" style="margin-top:10pt;">
+      <h4>Data Modeling Product Manager | Team Leader | Software Engineer</h4>
+      <div class="meta"><span class="co">CA Technologies</span><span class="sep">|</span><span class="date">Dec 2004 – Jul 2015</span></div>
       <ul>
         <li><b>Product Management:</b> Served as Product Manager/Principal Product Manager for ERwin Data Modeler, defining product vision, strategy, and roadmap in alignment with marketing and stakeholders.</li>
         <li><b>Engineering Leadership:</b> Led a multidisciplinary group of 12 engineers in the design, development, and delivery of key product functions.</li>
