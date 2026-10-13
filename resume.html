@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haris Kilikotu - Resume</title>
+    <style>
+        :root {
+            --primary-navy: #0B1F3B;
+            --accent-blue: #1A365D;
+            --text-dark: #2D3748;
+            --text-light: #4A5568;
+            --bg-light: #F7FAFC;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            background-color: #EDF2F7;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            background-color: var(--primary-navy);
+            color: #FFFFFF;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+            background-color: #1A365D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .sidebar h3 {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #90CDF4;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 6px;
+        }
+
+        .sidebar p, .sidebar li {
+            font-size: 13px;
+            color: #E2E8F0;
+            margin-bottom: 6px;
+            list-style: none;
+        }
+
+        .sidebar ul {
+            padding-left: 0;
+        }
+
+        .sidebar .skill-category {
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 40px;
+            background-color: #FFFFFF;
+        }
+
+        .header-main {
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .header-main h1 {
+            font-size: 28px;
+            color: var(--primary-navy);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .header-main h2 {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--primary-navy);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-navy);
+            padding-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .summary-text {
+            font-size: 14px;
+            color: var(--text-light);
+            text-align: justify;
+        }
+
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary-navy);
+        }
+
+        .job-company-date {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .job-details {
+            padding-left: 18px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .job-details li {
+            margin-bottom: 6px;
+        }
+
+        /* Responsive design for mobile screens */
+        @media (max-width: 768px) {
+            .resume-container {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Sidebar Area -->
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="profile-photo.jpg" alt="Haris Kilikotu">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Contact</h3>
+                <p>Hyderabad, India</p>
+                <p>+91 7799689423</p>
+                <p>hariskilikotu@gmail.com</p>
+                <p>Nationality: Indian</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Core Expertise</h3>
+                <ul>
+                    <li>Agentic AI & LLM Systems</li>
+                    <li>Solution Architecture</li>
+                    <li>Technical Product Management</li>
+                    <li>Data Modeling & Architecture</li>
+                    <li>Engineering Leadership</li>
+                    <li>Cloud & On-Prem Databases</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Technical Skills</h3>
+                
+                <span class="skill-category">Agentic AI & LLMs</span>
+                <p>CrewAI, LangChain, LangGraph, Mastra, Vector Databases</p>
+
+                <span class="skill-category">Data Modeling & Architecture</span>
+                <p>ERwin, IE, BPMN, UML, MS Visio, Relational Design</p>
+
+                <span class="skill-category">Databases & Warehousing</span>
+                <p>SQL Server, Oracle, MySQL, Snowflake, PL/SQL</p>
+
+                <span class="skill-category">NoSQL & Big Data</span>
+                <p>Hadoop, Cassandra, Neo4j, MongoDB, Redis</p>
+
+                <span class="skill-category">Programming Languages</span>
+                <p>C#, VC++, Java, JavaScript, TypeScript, Python</p>
+
+                <span class="skill-category">Web & Enterprise Dev</span>
+                <p>NodeJS, ASP.NET, WebAPI, HTML, XML, JSON, LEX/YACC</p>
+
+                <span class="skill-category">Tools & Methodologies</span>
+                <p>Git, GitHub, Jira, Agile Scrum/Kanban, Waterfall</p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Education</h3>
+                <p><strong>B.Tech, Mechanical Production Engineering</strong></p>
+                <p>University of Kerala, 2000</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="header-main">
+                <h1>Haris Kilikotu</h1>
+                <h2>Solution Architect | Technical Product Manager | Agentic AI Specialist</h2>
+            </header>
+
+            <section class="section">
+                <h3 class="section-title">Executive Summary</h3>
+                <p class="summary-text">
+                    A seasoned software engineering leader with over 20 years of experience spanning software development, data modeling, database architecture, engineering management, and product management. Proven track record of translating complex business challenges into powerful, high-performance software systems across both Agile and Waterfall methodologies. Extensive experience leading cross-functional engineering teams, architecting cloud and on-premise data management systems, and designing industry-leading products. Currently specializing in Agentic AI training and development, helping engineering teams build and scale modern multi-agent LLM workflows.
+                </p>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title">Professional Experience</h3>
+
+                <!-- Experience 1 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-title">Agentic AI Consultant & Trainer</span>
+                    </div>
+                    <div class="job-company-date">DeepLens &nbsp;|&nbsp; Apr 2026 - Present</div>
+                    <ul class="job-details">
+                        <li>Deliver professional, hands-on corporate training on Agentic AI frameworks including CrewAI, LangChain, LangGraph, Mastra, and Vector Databases.</li>
+                        <li>Mentor developers and architects on building multi-agent LLM systems, autonomous AI agents, and custom RAG solutions.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-title">Solution Architect - Data Management</span>
+                    </div>
+                    <div class="job-company-date">Relvar Technologies &nbsp;|&nbsp; Jan 2021 - Mar 2026</div>
+                    <ul class="job-details">
+                        <li>Architected end-to-end database solutions to model, build, and maintain high-performance on-premise and cloud-based databases (SQL Server, MySQL, Snowflake).</li>
+                        <li>Designed and built visualization tools for database objects, schema comparison engines, and automated data dictionary report generators.</li>
+                        <li>Led technical decisions regarding data integration, migration, and optimization to ensure high availability and security.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-title">Software Engineer IV</span>
+                    </div>
+                    <div class="job-company-date">NCR Corporation &nbsp;|&nbsp; Sep 2018 - Dec 2020</div>
+                    <ul class="job-details">
+                        <li>Developed and optimized enterprise software to enable retail transactions and hospitality services.</li>
+                        <li>Designed tools to record real-time online transactions and built historical sales analysis modules to enable data-driven business intelligence.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-title">Director of Software Development</span>
+                    </div>
+                    <div class="job-company-date">Mersat-Tech &nbsp;|&nbsp; May 2017 - Sep 2018</div>
+                    <ul class="job-details">
+                        <li>Led all software engineering activities and defined technical strategies to align engineering outputs with organizational goals.</li>
+                        <li>Built innovative service aggregation solutions using SQL Server, C#.NET, Web Services, Android, and iOS applications in an Agile environment.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-title">Data Modeling Product Manager | Team Leader | Software Engineer</span>
+                    </div>
+                    <div class="job-company-date">CA Technologies &nbsp;|&nbsp; Dec 2004 - Jul 2015</div>
+                    <ul class="job-details">
+                        <li><strong>Product Management:</strong> Served as Product Manager/Principal Product Manager for ERwin Data Modeler, defining product vision, strategy, and roadmap in alignment with marketing and stakeholders.</li>
+                        <li><strong>Engineering Leadership:</strong> Led a multidisciplinary group of 12 engineers in the design, development, and delivery of key product functions.</li>
+                        <li><strong>Process Improvement:</strong> Streamlined release cycles by adopting Agile methodologies and strengthened development quality through code quality assessments.</li>
+                        <li><strong>Client Engagement:</strong> Worked closely with customers to troubleshoot field issues and translate user feedback into user-centric solutions.</li>
+                        <li><strong>Core R&D:</strong> Designed advanced product elements such as image processing, reporting systems, and advanced data structures.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
